@@ -20,11 +20,17 @@
       "@nestjs/core": ["../elpis/node_modules/@nestjs/core"],
       "class-validator": ["../elpis/node_modules/class-validator"],
       "class-transformer": ["../elpis/node_modules/class-transformer"],
-      "@fsiaonma/elpis/nest": ["../elpis/dist/nest-public"]
+      "@fsiaonma/elpis/nest": ["../elpis/dist/nest-public"],
+      "@fsiaonma/elpis": ["app/types/elpis-ai"]
     }
   },
   "include": [
     "app/modules/**/*.ts",
+    "app/skills/**/*.ts",
+    "app/agents/**/*.ts",
+    "app/prompts/**/*.ts",
+    "app/llm-providers/**/*.ts",
+    "app/eval/**/*.ts",
     "node_modules/@fsiaonma/elpis/app/types/express.d.ts"
   ]
 }

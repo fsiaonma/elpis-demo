@@ -10,7 +10,8 @@
     "beta": "_ENV='beta' PORT=8081 node ./server.js",
     "prod": "npm run build:modules && _ENV='production' node ./server.js",
     "build:dev": "_ENV='local' node --max_old_space_size=4096 ./build.js",
-    "build:prod": "_ENV='production' node ./build.js"
+    "build:prod": "_ENV='production' node ./build.js",
+    "eval": "node scripts/eval.js"
   },
   "author": "哲玄",
   "license": "ISC",

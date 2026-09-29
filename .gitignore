@@ -5,3 +5,8 @@ dist/
 logs/
 *.log
 .DS_Store
+data/trace/*.json
+data/vector/*
+!data/vector/.gitkeep
+data/memory/*.json
+!data/memory/.gitkeep

@@ -1,0 +1,28 @@
+{
+  "suite": "project-assistant",
+  "ranAt": "2026-09-20T16:29:28.134Z",
+  "results": [
+    {
+      "id": "query-jd",
+      "pass": true
+    },
+    {
+      "id": "block-danger",
+      "pass": true
+    },
+    {
+      "id": "mcp-list-dir",
+      "pass": true
+    },
+    {
+      "id": "rag-fixture",
+      "pass": true
+    },
+    {
+      "id": "thread-follow-up",
+      "pass": true
+    }
+  ],
+  "passCount": 5,
+  "failCount": 0
+}
