@@ -4,16 +4,21 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "_ENV='local' nodemon ./server.js",
+    "build:modules": "tsc -p tsconfig.json",
+    "build:modules:watch": "tsc -w -p tsconfig.json",
+    "dev": "npm run build:modules && concurrently -n tsc,server \"npm run build:modules:watch\" \"_ENV='local' nodemon --watch dist/modules --delay 1 ./server.js\"",
     "beta": "_ENV='beta' PORT=8081 node ./server.js",
-    "prod": "_ENV='production' node ./server.js",
+    "prod": "npm run build:modules && _ENV='production' node ./server.js",
     "build:dev": "_ENV='local' node --max_old_space_size=4096 ./build.js",
     "build:prod": "_ENV='production' node ./build.js"
   },
   "author": "哲玄",
   "license": "ISC",
   "devDependencies": {
-    "nodemon": "^3.1.9"
+    "@types/node": "^22",
+    "concurrently": "^9.2.1",
+    "nodemon": "^3.1.9",
+    "typescript": "^6"
   },
   "dependencies": {
     "@fsiaonma/elpis": "^1.0.5",
@@ -23,6 +28,7 @@
     "moment": "^2.30.1",
     "monaco-editor": "^0.56.0",
     "monaco-editor-vue3": "^1.0.5",
+    "mysql2": "^3",
     "uuid": "^11.1.0"
   }
 }

@@ -1,4 +1,4 @@
-module.exports = ({ routes, siderRoutes }) => {
+export default ({ routes, siderRoutes }) => {
 	// 头部路由
 	routes.push({
 		path: '/view/dashboard/todo',

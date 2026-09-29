@@ -9,7 +9,7 @@ module.exports = {
 		subMenu: [{
 			key: 'info-setting',
 			name: '店铺信息',
-			menutType: 'module',
+			menuType: 'module',
 			moduleType: 'custom',
 			customConfig: {
 				path: '/todo'
@@ -17,7 +17,7 @@ module.exports = {
 		}, {
 			key: 'quality-setting',
 			name: '店铺资质',
-			menutType: 'module',
+			menuType: 'module',
 			moduleType: 'iframe',
 			iframeConfig: {
 				path: 'http://www.baidu.com'

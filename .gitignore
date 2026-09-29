@@ -1,4 +1,7 @@
 node_modules
 config.local.js
 app/public/dist
-logs
+dist/
+logs/
+*.log
+.DS_Store

@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "ES2021",
+    "lib": ["ES2021"],
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "declaration": false,
+    "outDir": "./dist",
+    "rootDir": "./app",
+    "strictNullChecks": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "ignoreDeprecations": "6.0",
+    "moduleResolution": "node",
+    "types": ["node"],
+    "baseUrl": ".",
+    "paths": {
+      "@nestjs/common": ["../elpis/node_modules/@nestjs/common"],
+      "@nestjs/core": ["../elpis/node_modules/@nestjs/core"],
+      "class-validator": ["../elpis/node_modules/class-validator"],
+      "class-transformer": ["../elpis/node_modules/class-transformer"],
+      "@fsiaonma/elpis/nest": ["../elpis/dist/nest-public"]
+    }
+  },
+  "include": [
+    "app/modules/**/*.ts",
+    "node_modules/@fsiaonma/elpis/app/types/express.d.ts"
+  ]
+}
