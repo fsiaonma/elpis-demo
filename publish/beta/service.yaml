@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: ed-beta
+  namespace: elpis-demo-beta
+spec:
+  ports:
+    - port: 8081
+      targetPort: 8081
+  selector:
+    app: ed-beta-pod
+  type: LoadBalancer

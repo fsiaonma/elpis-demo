@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: ed-beta
+  name: ed-beta-deployment
+  namespace: elpis-demo-beta
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ed-beta-pod
+  template:
+    metadata:
+      labels:
+        app: ed-beta-pod
+    spec:
+      containers:
+        - image: 'zhexuanqianduan-docker.pkg.coding.net/elpis/elpis-demo-007/elpis-demo-image-beta'
+          name: ed-beta-container
+          ports:
+            - containerPort: 8081
+      imagePullSecrets:
+        - name: coding-registry-cred-8887010
