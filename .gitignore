@@ -10,3 +10,4 @@ data/vector/*
 !data/vector/.gitkeep
 data/memory/*.json
 !data/memory/.gitkeep
+data/resumes/

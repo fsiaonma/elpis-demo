@@ -1,5 +1,6 @@
 const { MockProvider } = require('../dist/llm-providers/mock.provider');
 const { LocalProvider } = require('../dist/llm-providers/local.provider');
+const { RubricLevelChunker } = require('../dist/rag/rubric-level.chunker');
 
 module.exports = {
 	name: 'elpis-demo',
@@ -49,12 +50,15 @@ module.exports = {
       },
     },
     runtime: {
-      maxIterations: 5,
+      maxIterations: 50,
     },
     store: {
       trace: './data/trace',
       vector: {
-        driver: 'file',
+        driver: 'qdrant',
+        url: 'http://127.0.0.1:6333',
+        collection: 'rubric',
+        compareCollection: 'rubric_bysize',
         path: './data/vector',
         fixturesPath: './data/fixtures',
       },
@@ -77,9 +81,13 @@ module.exports = {
     },
     rag: {
       chunk: { size: 500, overlap: 80 },
-      topK: 4,
+      topK: 3,
+      chunker: {
+        use: RubricLevelChunker,
+      },
       tool: {
-        description: '从 elpis 知识库检索片段（实验室用途 · jd 项目契约）；回答必须引用 docId',
+        description:
+          '查询简历评估的分级标准；按维度与级别检索，回答必须引用返回的 docId 与原文片段',
       },
     },
     mcp: {
@@ -89,6 +97,32 @@ module.exports = {
           name: 'filesystem',
           command: 'npx',
           args: ['-y', '@modelcontextprotocol/server-filesystem', '.'],
+        },
+        {
+          name: 'resume-parser',
+          command: 'uv',
+          args: ['run', 'python', '-u', 'server.py'],
+          env: {
+            PYTHONUNBUFFERED: '1',
+          },
+          cwd: 'mcp-servers/resume-parser-py',
+        },
+        {
+          name: 'jd-store',
+          command: 'java',
+          args: ['-jar', 'target/jd-store.jar'],
+          cwd: 'mcp-servers/jd-store-java',
+          env: {
+            MYSQL_URL: 'jdbc:mysql://127.0.0.1:3306/zteam?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC',
+            MYSQL_USER: 'root',
+            MYSQL_PASSWORD: 'Sam@123456',
+          },
+        },
+        {
+          name: 'recall',
+          command: './recall-go',
+          args: [],
+          cwd: 'mcp-servers/recall-go',
         },
       ],
     },

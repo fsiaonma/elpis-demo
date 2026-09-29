@@ -69,10 +69,9 @@ async function login() {
 }
 
 async function ingestRag(cookie) {
-  const { json } = await signedFetch(`${apiBase}/rag/ingest`, {
+  const { json } = await signedFetch(`${serverOrigin}/api/eval/ingest`, {
     method: 'POST',
     cookie,
-    body: JSON.stringify({ path: './data/fixtures' }),
   });
 
   if (!json?.success) {

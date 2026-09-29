@@ -1,0 +1,20 @@
+{
+  "dimensionWeights": {
+    "技术深度": 0.25,
+    "工程能力": 0.2,
+    "业务理解": 0.15,
+    "项目影响力": 0.15,
+    "协作沟通": 0.15,
+    "成长性": 0.1
+  },
+  "defaultDimensionWeight": 0.1,
+  "verdictCoefficients": {
+    "hit": 1.0,
+    "partial": 0.5,
+    "miss": 0.0
+  },
+  "hardGates": {
+    "disqualifyOnHardMiss": true,
+    "educationOrder": ["大专", "本科", "硕士", "博士"]
+  }
+}

@@ -20,6 +20,11 @@ export default ({ routes, siderRoutes }) => {
 		component: () => import('./eval/eval.vue')
 	});
 
+	routes.push({
+		path: '/view/dashboard/resume-studio/report',
+		component: () => import('./resume-studio/report/index.vue'),
+	});
+
 	// 侧边路由
 	siderRoutes.push({
 		path: 'todo',

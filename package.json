@@ -11,7 +11,8 @@
     "prod": "npm run build:modules && _ENV='production' node ./server.js",
     "build:dev": "_ENV='local' node --max_old_space_size=4096 ./build.js",
     "build:prod": "_ENV='production' node ./build.js",
-    "eval": "node scripts/eval.js"
+    "eval": "node scripts/eval.js",
+    "index:rubric": "node scripts/index-rubric.js"
   },
   "author": "哲玄",
   "license": "ISC",
@@ -23,6 +24,7 @@
   },
   "dependencies": {
     "@fsiaonma/elpis": "^1.0.5",
+    "echarts": "^6.1.0",
     "element-plus": "^2.9.5",
     "generate-password": "^1.7.1",
     "jsonwebtoken": "^9.0.2",

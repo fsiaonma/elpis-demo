@@ -117,8 +117,7 @@ async function ingestFixtures() {
 
   const res = await $curl({
     method: 'post',
-    url: '/api/ai/rag/ingest',
-    data: { path: './data/fixtures' },
+    url: '/api/eval/ingest',
     errorMessage: '灌库失败',
   });
 

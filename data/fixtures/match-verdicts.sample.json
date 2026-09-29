@@ -1,0 +1,122 @@
+{
+  "jobId": "d02958c4-d44c-43a3-c440-cc2e724a0c8e",
+  "title": "前端架构前端技术专家",
+  "description": "对应 V30 part4.sql 导入 t_job 的一条岗位，手写判定样例，用于不调模型时验证 score_match 算分链路。",
+  "verdicts": [
+    {
+      "requirementId": "7a90ec9a-8aff-49c0-820f-c8c45dfd0808",
+      "verdict": "hit",
+      "evidence": "字节跳动 2019.03-至今、阿里巴巴 2016.07-2019.02，前端经验累计超过 3 年。"
+    },
+    {
+      "requirementId": "8e1ff140-49de-4773-4b37-09e8b9669061",
+      "verdict": "hit",
+      "evidence": "同上，两段前端任职经历合计超过 3 年。"
+    },
+    {
+      "requirementId": "d383df5c-86b4-4387-941a-a3140d5a388a",
+      "verdict": "hit",
+      "evidence": "简历工作经历可追溯到 2016 年起的前端开发岗位。"
+    },
+    {
+      "requirementId": "3e841420-b6c1-48e3-93cf-f7e10237b7e0",
+      "verdict": "partial",
+      "evidence": "简历写 8 年前端经验，可明确追溯的任职记录约 7 年，接近 5 年门槛。"
+    },
+    {
+      "requirementId": "6cc86769-f03f-4d85-98db-9a83d0f6d100",
+      "verdict": "hit",
+      "evidence": "教育背景：浙江大学本科，计算机科学与技术。"
+    },
+    {
+      "requirementId": "b01d4dc6-c2b1-4124-990b-f6eaab77b848",
+      "verdict": "hit",
+      "evidence": "技能栏含 Vue 与 React；字节跳动经历强调 Vue 架构，阿里巴巴经历强调 React。"
+    },
+    {
+      "requirementId": "b70da252-aa90-49a8-3f07-303a4729fc1d",
+      "verdict": "hit",
+      "evidence": "同上，Vue 与 React 均有项目与任职证据。"
+    },
+    {
+      "requirementId": "abfea239-1b1f-43cc-6fb3-c54e18bc0652",
+      "verdict": "hit",
+      "evidence": "技能栏含 TypeScript；字节跳动经历写明用 TypeScript 编写 BFF 服务。"
+    },
+    {
+      "requirementId": "92c401ed-621d-4378-0fa0-cefee640985c",
+      "verdict": "hit",
+      "evidence": "技能栏含 Node.js；工作经历提到 Node.js 服务端与 BFF 开发经验。"
+    },
+    {
+      "requirementId": "f4650f72-1a85-4b26-a304-2584f2e887b5",
+      "verdict": "hit",
+      "evidence": "同上，Node.js 服务端开发经验有明确描述。"
+    },
+    {
+      "requirementId": "4f6381ce-6a93-4d30-e7e0-ecd7a5011db8",
+      "verdict": "hit",
+      "evidence": "字节跳动经历提到 Webpack、Vite 与 CI/CD 等前端工程化实践。"
+    },
+    {
+      "requirementId": "d203c8c1-fb70-4644-4439-e41bdc823b51",
+      "verdict": "partial",
+      "evidence": "有工程化描述，但未单独展开性能优化指标或优化幅度。"
+    },
+    {
+      "requirementId": "7c021ee6-2d53-49a5-3a33-4f31cff5266b",
+      "verdict": "hit",
+      "evidence": "项目经历描述需求拆解、方案评审与跨角色协同，体现业务理解与推动落地。"
+    },
+    {
+      "requirementId": "30c8a168-f6aa-4f15-01d5-f9997f1b623c",
+      "verdict": "hit",
+      "evidence": "字节跳动经历提到复杂项目交付与规范被多个团队采用，有影响力证据。"
+    },
+    {
+      "requirementId": "785e2cb8-261f-4aa5-0e36-da8b9ef83f42",
+      "verdict": "partial",
+      "evidence": "有项目影响力描述，缺少量化成果数据。"
+    },
+    {
+      "requirementId": "7b556f47-0135-413d-0ea3-f235cff218d2",
+      "verdict": "partial",
+      "evidence": "影响力描述重复出现，证据充分但缺少独立案例细节。"
+    },
+    {
+      "requirementId": "1c14e167-5b2a-4d8f-2874-771d97501051",
+      "verdict": "hit",
+      "evidence": "字节跳动资深前端工程师职责含技术方案评审与架构设计。"
+    },
+    {
+      "requirementId": "c76babf9-18f5-4550-6192-6c404953cbaa",
+      "verdict": "hit",
+      "evidence": "同上，架构设计与方案评审有明确任职描述。"
+    },
+    {
+      "requirementId": "82dfecfa-09a5-4c63-361c-74adb276834d",
+      "verdict": "hit",
+      "evidence": "项目经历写明协调客户端与运维完成评审，具备跨团队沟通协作证据。"
+    },
+    {
+      "requirementId": "84145def-1662-45bb-6acc-bbc238e04ea8",
+      "verdict": "hit",
+      "evidence": "工作经历提到规范被多个团队采用，体现跨团队协作。"
+    },
+    {
+      "requirementId": "e8907765-7ccc-4afd-d228-4f59b0674330",
+      "verdict": "partial",
+      "evidence": "协作描述充分，但未单独列出协作对象与具体协作机制。"
+    },
+    {
+      "requirementId": "04929408-bc75-47c0-221c-e0ca626fabb9",
+      "verdict": "hit",
+      "evidence": "工作经历写明持续学习新技术并分享给团队。"
+    },
+    {
+      "requirementId": "4b8189c2-f5d6-4481-4520-62fcf4457f02",
+      "verdict": "hit",
+      "evidence": "同上，成长性要求有明确证据。"
+    }
+  ]
+}

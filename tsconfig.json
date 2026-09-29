@@ -18,10 +18,9 @@
     "paths": {
       "@nestjs/common": ["../elpis/node_modules/@nestjs/common"],
       "@nestjs/core": ["../elpis/node_modules/@nestjs/core"],
+      "@nestjs/platform-express": ["../elpis/node_modules/@nestjs/platform-express"],
       "class-validator": ["../elpis/node_modules/class-validator"],
-      "class-transformer": ["../elpis/node_modules/class-transformer"],
-      "@fsiaonma/elpis/nest": ["../elpis/dist/nest-public"],
-      "@fsiaonma/elpis": ["app/types/elpis-ai"]
+      "class-transformer": ["../elpis/node_modules/class-transformer"]
     }
   },
   "include": [
@@ -31,6 +30,7 @@
     "app/prompts/**/*.ts",
     "app/llm-providers/**/*.ts",
     "app/eval/**/*.ts",
+    "app/rag/**/*.ts",
     "node_modules/@fsiaonma/elpis/app/types/express.d.ts"
   ]
 }
