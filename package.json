@@ -23,7 +23,7 @@
     "typescript": "^6"
   },
   "dependencies": {
-    "@fsiaonma/elpis": "^1.0.5",
+    "@fsiaonma/elpis": "^2.0.0",
     "echarts": "^6.1.0",
     "element-plus": "^2.9.5",
     "generate-password": "^1.7.1",
